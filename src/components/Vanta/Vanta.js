@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
-import WAVES from "vanta/dist/vanta.waves.min.js";
+import WAVES from "vanta/dist/vanta.clouds.min.js";
 
 const Vanta = () => {
 	const vantaRef = useRef(null);
@@ -15,9 +15,9 @@ const Vanta = () => {
 			gyroControls: false,
 			minHeight: 200.0,
 			minWidth: 200.0,
-			scale: 1.0,
-			scaleMobile: 1.0,
-			color: 0x50b11,
+			skyColor: "#502D72",
+			cloudColor: "#BE3465",
+			cloudShadowColor: 0x4989,
 		});
 
 		return () => {
